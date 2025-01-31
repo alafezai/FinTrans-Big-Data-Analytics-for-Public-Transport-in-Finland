@@ -93,9 +93,10 @@ Accédez à Grafana via `http://localhost:3000` et configurez la connexion à Ca
 ### 2. Exécuter le script de production des données (Python → Kafka)
 Le script  Python  **MQTT.ipynb** envoie des données  vers Kafka :
 
-**Visualisation avec Grafana**
-1/ Accédez à Grafana à l'adresse http://localhost:3000.
 
+**Visualisation avec Grafana**
+
+1/ Accédez à Grafana à l'adresse http://localhost:3000.
 2/ Configurez Cassandra comme source de données.
 
 
