@@ -73,14 +73,14 @@ bin/kafka-topics.sh --create --topic real_time_data --bootstrap-server localhost
 
 #### Démarrer Cassandra
 ```bash
-cassandra -f
+sudo systemctl start cassandra
 ```
 Créer une base de données et une table :
 ```cql
-CREATE KEYSPACE realtime_analysis WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
-USE realtime_analysis;
-CREATE TABLE analytics (id UUID PRIMARY KEY, timestamp TIMESTAMP, metric DOUBLE);
+CREATE KEYSPACE test WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+USE test;
 ```
+Créer les tables en utilisant le ficher **cassandra.sql**
 
 #### Démarrer Grafana
 ```bash
@@ -92,5 +92,11 @@ Accédez à Grafana via `http://localhost:3000` et configurez la connexion à Ca
 
 ### 2. Exécuter le script de production des données (Python → Kafka)
 Le script  Python  **MQTT.ipynb** envoie des données  vers Kafka :
+
+**Visualisation avec Grafana**
+1/ Accédez à Grafana à l'adresse http://localhost:3000.
+
+2/ Configurez Cassandra comme source de données.
+
 
 
