@@ -14,25 +14,28 @@ Ce projet met en place un pipeline de traitement en temps réel utilisant les te
 
 ```
 FINTRANS-BIG-DATA-ANALYTICS-FOR-PUBLIC-T...
-│── Api/
-│   ├── données_statique.ipynb
-│   ├── gtfs_realtime_to_kafka.ipynb
+FinTrans-Big-Data-Analytics-for-Public-Transport-in-Finland/
+├── Api/
+│   ├── gifs_realtime_to_kafka.ipynb
 │   ├── MQTT.ipynb
-│   ├── requirements.txt
-│── cassandra/
-│   ├── cassandra.sql
-│── kafka/
-│── SparkStream/
+│   └── requirements.txt
+├── cassandra/
+│   └── cassandra.sql
+├── Graphe/
+│   └── graphic_vehicule.ipynb
+├── kafka/
+│   └── Kafka_Startup_and_Topic_Creation.ipynb
+├── SparkStream/
 │   ├── checkpoint/
 │   ├── chetest/
 │   ├── dossier_parquet/
-│   ├── JsonNode/
-│── spark-warehouse/
+│   ├── jsonNode/
+│   ├── spark-warehouse/
 │   ├── Analyses.ipynb
-│   ├── graphe.ipynb
+│   ├── graphic.ipynb
 │   ├── KafkaConsumer.ipynb
 │   ├── SparkApp.ipynb
-│   ├── transformation.ipynb
+│   └── transformation.ipynb
 │── README.md
 │── requirements.txt
 ```
