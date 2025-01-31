@@ -2,20 +2,6 @@ CREATE KEYSPACE test
 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
 
 
-CREATE TABLE vehicle_avg_speed (
-    vehicle_type TEXT,
-    window_start TIMESTAMP,
-    window_end TIMESTAMP,
-    avg_speed DOUBLE,
-    PRIMARY KEY (vehicle_type, window_start)
-);
-
-UPDATE vehicle_data
-SET tst = value
-WHERE primary_key_column = key_value;
-
-
-
 
 CREATE TABLE IF NOT EXISTS vehicle_data_st (
     trip_id TEXT,
@@ -35,8 +21,6 @@ CREATE TABLE IF NOT EXISTS vehicle_data_st (
     PRIMARY KEY ((trip_id), tst)
 );
 
-"########################################
-
 CREATE TABLE fleet_performance (
     vehicle_type text,
     window_start timestamp,
@@ -48,7 +32,6 @@ CREATE TABLE fleet_performance (
     avg_occupancy float,
     PRIMARY KEY (vehicle_type, window_start)
 );
-#######################################"
 
 CREATE TABLE IF NOT EXISTS analyses_temps_reel_line (
     line INT PRIMARY KEY,
@@ -58,8 +41,6 @@ CREATE TABLE IF NOT EXISTS analyses_temps_reel_line (
     retard_moyen DOUBLE,
     nb_vehicules_actifs BIGINT
 );
-
-
 
 
 
