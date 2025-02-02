@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.VectorAssembler","timestamp":1738520614656,"sparkVersion":"3.5.4","uid":"VectorAssembler_d263858f3250","paramMap":{"outputCol":"features","handleInvalid":"skip","inputCols":["vehicle_type_index","route_id_index","spd","hour","minute","second"]},"defaultParamMap":{"outputCol":"VectorAssembler_d263858f3250__output","handleInvalid":"error"}}
